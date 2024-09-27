@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="RESİMLER/Sayfa 9.jpeg" type="image/x-icon">
+    <title>GOLDEN HERBAL TEA WORLD</title>
+    <style>
+    
+    body {
+    background-image: url('RESİMLER/newpic.jpg');
+    background-attachment: fixed; /* Parallax efekti için gerekli */
+    background-size: cover; /* Resmi her cihaza göre ölçekler */
+    background-position: center center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    text-align: center;
+    color: #6a4f8a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    z-index: 1;
+}
+
+/* Küçük ekranlar için arka planı optimize et */
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Mobilde sabit arka planı devre dışı bırak */
+        background-size: contain; /* Resmi küçük ekranlarda ölçekler */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+        background-size: contain; /* Mobil cihazlar için resmi içeriğe sığdırır */
+    }
+}
+
+
+        h1 {
+            background-color: #6a4f8a;
+            color: #ffd54f;
+            padding: 40px;
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .gold {
+            color: white;
+            background-color: #6a4f8a;
+            padding: 20px;
+            margin: 0;
+        }
+
+       
+        nav.ak {
+            background-color: #4caf50;
+        }
+
+        .ak ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+           border-radius: 15px;
+        }
+
+        .ak ul li {
+            display: inline-block;
+            position: relative;
+            margin: 10px 20px;
+        }
+
+        .ak a {
+            background-color: #4caf50;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.8s ease;
+        }
+
+        .ak li:hover ul {
+            display: block;
+        }
+
+        .ak li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #4caf50;
+            list-style: none;
+            padding: 10px;
+        }
+
+        .ak li ul li a {
+            margin: 5px 0;
+            display: block;
+            padding: 5px;
+        }
+
+        .ak a:hover {
+            color: #ffca28;
+        }
+
+       
+        .real {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .text {
+            display: inline-block;
+            animation: textAnim 4s forwards;
+            line-height: 1.5em;
+            color: #4caf50;
+        }
+
+        .color {
+            color: gold;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tea h2 {
+            font-size: 2em;
+            color: #4caf50;
+        }
+
+        .a,
+        .menuitems {
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 20px;
+            background-color: gray;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: all 0.6s ease;
+            width: 90%;
+            max-width: 400px;
+           color: gold;
+        }
+
+        .a:hover,
+        .menuitems:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+        }
+
+
+        video {
+            border: 3px solid rgba(128, 0, 128, 0.596);
+            box-shadow: 0 0 5px #6a4f8a;
+            animation: glow 1s infinite alternate;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        @keyframes glow {
+            to {
+                box-shadow: 0 0 30px #6a4f8a;
+            }
+        }
+
+    
+        .shake {
+            animation: shake 2s infinite;
+            background-color: #4caf50;
+            color: #ffca28;
+            padding: 20px;
+            border-radius: 15px;
+            width: 180px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-weight: 600;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-10px);
+            }
+
+            75% {
+                transform: translateX(10px);
+            }
+        }
+
+        .order {
+            display: block;
+            background-color: #ffca28;
+            padding: 30px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #6a4f8a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 75px;
+            margin: 40px auto;
+            transition: all 0.5s ease;
+           text-decoration: none;
+        }
+
+        .order:hover {
+            transform: translateY(-15px);
+            background-color: #ffd54f;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #6a4f8a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Tasarım */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+                padding: 20px;
+            }
+
+            .real {
+                margin: 10px;
+            }
+
+            .a,
+            .menuitems {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            video {
+                width: 100%;
+            }
+
+            .shake {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .order {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .a,
+            .menuitems {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            video {
+                width: 100%;
+            }
+
+            .shake,
+            .order {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>GOLDEN HERBAL TEA WORLD</h1>
+
+    <nav class="ak">
+        <ul>
+            <li><a href="#">Main Page</a>
+                <ul>
+                    <li><a href="#">Golden Herbal Tea</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="index.html">Golden Herbal Teas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a>
+                <ul>
+                    <li><a href="#">Find Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="real">
+        <div class="tea">
+            <h2>The Refreshing of Nature!</h2>
+            <div class="text">
+                Welcome to our <div class="color">Golden Herbal Tea World</div> where nature's finest ingredients promote health and wellness. Discover our diverse selection of herbal teas, crafted to enhance your well-being and soothe your senses.
+            </div>
+        </div>
+
+        <div class="a">
+            <p>Golden Herbal Tea</p>
+            <img src="RESİMLER/herbal-tea-cinnamon-peppermint-red-upscaled (1).jpg" alt="Golden Herbal Tea" width="100%">
+        </div>
+
+        <div class="menuitems">
+            <p>Golden Herbal Tea</p>
+            <img src="RESİMLER/unnamed_1714564275227.jpg" alt="Golden Herbal Tea" width="100%">
+        </div>
+
+        <video src="video/2.dosya.mp4" controls loop></video>
+
+        <div class="shake">CONTACT:<br> +90 551 964 31 99</div>
+
+        <a href="#" class="order">Order Now!</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GOLDEN HERBAL TEA WORLD</p>
+    </footer>
+
+</body>
+
+</html>
